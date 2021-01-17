@@ -3,8 +3,8 @@ ENV PORT 8080
 #ontimize app port
 EXPOSE 8080
 #app
-COPY ./module-boot/target/REPLACE_ME_APP_NAME-boot.jar /opt/REPLACE_ME_APP_NAME-boot.jar
-COPY ./module-model/src/main/db/templateDB.txt /db/templateDB.script
+COPY ./REPLACE_ME_APP_NAME-boot/target/REPLACE_ME_APP_NAME-boot.jar /opt/REPLACE_ME_APP_NAME-boot.jar
+COPY ./REPLACE_ME_APP_NAME-model/src/main/db/templateDB.txt /db/templateDB.script
 WORKDIR /opt
 ## download from mvnrepository.
 RUN wget https://repo1.maven.org/maven2/org/hsqldb/hsqldb/2.3.4/hsqldb-2.3.4.jar

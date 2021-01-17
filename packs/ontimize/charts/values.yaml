@@ -58,14 +58,14 @@ resources:
   requests:
     cpu: 400m
     memory: 512Mi
-probePath: /actuator/
+probePath: /app/assets/css/loader.css
 livenessProbe:
-  initialDelaySeconds: 60
+  initialDelaySeconds: 30
   periodSeconds: 10
   successThreshold: 1
   timeoutSeconds: 1
 readinessProbe:
-  failureThreshold: 1
+  failureThreshold: 3
   periodSeconds: 10
   successThreshold: 1
   timeoutSeconds: 1
