@@ -58,7 +58,7 @@ resources:
   requests:
     cpu: 400m
     memory: 512Mi
-probePath: /app/assets/css/loader.css
+probePath: /
 livenessProbe:
   initialDelaySeconds: 30
   periodSeconds: 10
